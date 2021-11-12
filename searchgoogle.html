@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Unblock Websites!</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROxfH3P59Cw5HsZxFfy15zbnDEzHfR61l_T42ZtEoviNw-Vb5fU0cK1czPtS5fpseYiEs:https://cdn.vox-cdn.com/thumbor/Ous3VQj1sn4tvb3H13rIu8eGoZs%3D/0x0:2012x1341/1400x788/filters:focal(0x0:2012x1341):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg&usqp=CAU">
+        <div>
+            <script>
+                function go() {
+                    var input = document.getElementById('url-target');
+                    if (input.value) {
+                        window.open('https://google.com/search?q=' + input.value);
+                    } else {
+                        alert('Please search something.');
+                    }
+                }
+            </script>
+            <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;" class="w3-xlarge">Input your search here: </p>
+            <div>
+                <input  style="font-family: Verdana, Geneva, Tahoma, sans-serif" class="w3-xlarge" type='text' placeholder='Google Slides' id='url-target'
+                    onkeydown='if(event.key==="Enter") go()' />
+                <button onclick='go()' class="w3-xlarge">Search!</button>
+            </div>
+            <br>
+            <br>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
+© 2021 GitHub, Inc.
