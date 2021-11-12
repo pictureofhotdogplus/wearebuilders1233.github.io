@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Unblock Websites!</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjjEgLUSXHW4SdN3qFboDQkllC8K9IWtIV6ZM2njpyAqWDGdqfj1YB0_WITBa15fNBFyw:https://www.purplealienplanet.com/sites/default/files/image/unblock.png&usqp=CAU">
+        <div>
+            <script>
+                function go() {
+                    var input = document.getElementById('url-target');
+                    if (input.value) {
+                        window.open('https://undercover-web-proxy.herokuapp.com/main/' + input.value);
+                    } else {
+                        alert('Please provide a link. It does not require https://.');
+                    }
+                }
+            </script>
+            <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;" class="w3-xlarge">Input your URL here: </p>
+            <div>
+                <input  style="font-family: Verdana, Geneva, Tahoma, sans-serif" class="w3-xlarge" type='text' placeholder='https://www.google.com' id='url-target'
+                    onkeydown='if(event.key==="Enter") go()' />
+                <button onclick='go()' class="w3-xlarge">Go!</button>
+            </div>
+            <br>
+            <br>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
